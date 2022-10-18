@@ -11,12 +11,9 @@ var Hello []string
 func Render(path string) string {
 	// TODO
 
-	var users string
-
 	// 인자 없으면 Welcome + 사용자
 	if len(path) < 1 {
-		users = strings.Join(Hello[:], "\n")
-
+		users := strings.Join(Hello[:], "\n")
 		return "# Welcome\n" + users
 	}
 
